@@ -2,19 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: PT Sans Caption;
+    
 }
 
 body {
-    overscroll-behavior-y: none;
-}
-
-body::-webkit-scrollbar {
-    display: none;
+    background-color: rgb(254, 250, 243);
 }
 
 div {
     display: block;
-
+    background-color: rgb(254, 250, 243);
 }
 
 .Wrapper {
@@ -27,55 +25,64 @@ div {
     padding: 0 5%;
 }
 
+/* header */
+
+/* navbar */
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-	background-color: rgb(228, 227, 215);
+    background-color: rgb(254, 250, 243);
+    border-style: none none solid none;
+}
+
+h1 {
+    font-family: Zen Old Mincho;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .navbarr {
     width: 100%;
-    display: flex;
     align-items: center;
-    overflow: hidden;
-}
-
-.logo {
-    width: 50px;
-    cursor: pointer;
-    margin: 30px 0;
 }
 
 nav {
-    flex: 1;
-    text-align: right; 
+    text-align: center; 
 }
 
-nav ul li {
+li{
+    margin: 20px 20px;
+}
+
+ul{
+    margin-top: -10px;
+}
+
+nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 0px;
-}
-
-li:first-child {
-    margin-right: 30px;
-}
-
-nav ul li a{
     text-decoration: none;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #6e6d7a;
+    font-family: PT Sans Caption;
+    color: black;
     font-size: 14px;
     font-weight: 500;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
 nav ul li a:hover {
     border-style: none none solid none;
-    color: #6e6d7a;
+    color: black;
     text-decoration: none;
 }
 
+/*
 #inputSearch {
     outline: none;
     border: none;
@@ -85,98 +92,133 @@ nav ul li a:hover {
 
 .inputSearch:hover {
     border-block-end: solid ;
-    border-color: #6e6d7a;
+    color: black;
 }
+*/
 
-#inputSearch:focus{
-    border-style: none none solid none;
-    border-color: #6e6d7a;
-}
+/* promo */
 
 .prom {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
-/*
-.slider-wrap {
-  position: fixed;
-  top: 20%;
-  left: 10%;
-  width: 80%;
-  height: 300px;
-  overflow: hidden;
-  border: 1px solid white;
+/* video */
+
+.video-container{
+    width: 100%;
+    height: 110vh;
+  }
+      
+iframe {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
 }
 
-.slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 4000px;
-  display: flex;
-  will-change: transform;
-  background-color: black;
-}
+/* main */
 
-.slider-item {
-  position: relative;
-  flex: 1;
-  overflow: hidden;
-  filter: grayscale(100%);
-}
-
-.img-div {
-  position: relative;
-  left: 1%;
-  top: 2.5%;
-  width: 98%;
-  height: 95%;
-  background-size: cover;
-  background-position: center;
-}
-*/
-
-#content {
+.mainContentt {
     width: 100%;
     padding: 0 12%;
-    overflow: hidden;
-    border: 1rm solid black;
-    margin-top: 50px;
-
+    border: 1rm solid rgb(73, 67, 67);
+    margin-bottom: 1000px;
+    background-color: rgb(254, 250, 243);
 }
+
+.mainContentt {
+    width: 100%;
+    padding: 0 12%;
+    border: 1rm solid black;
+    margin-bottom: 100px;
+    background-color: rgb(254, 250, 243);
+}
+
 .content {
     width: 100%;
     padding: 0 8%;
-    overflow: hidden;
+    background-color: rgb(254, 250, 243);
+    /* overflow: hidden; */
     /*border: 0.1rem solid black;*/
 
 }
 
 .panels{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 17%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
     justify-content: center;
+    background-color: rgb(254, 250, 243);
 }
 
-#panel {
-    
+
+.decerP{
+    /* font-family: Noto Serif Display; */
+    font-family: Zen Old Mincho;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.artestName {
+    display: inline-block;
+    font-family: PT Sans Caption;
+    font-size: 15px;
+}
+
+.panels span{
+    float: left;
+    font-size: 20px;
 }
 
 .fa-heart-o {
-    color: rgb(196, 90, 90);
+    display: inline-block;
+    color: rgb(100, 47, 47);
     cursor: pointer;
 }
   
 .fa-heart {
-    color: rgb(196, 90, 90);
+    display: inline-block;
+    color: rgb(100, 47, 47);
     cursor: pointer;
 }
-  
-.description {
+
+
+/* favorite */
+
+.title {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#panell{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: 10%;
+    background-color: rgb(254, 250, 243);
+}
+
+#panell:first-child{
+    margin-top: 40%;
+}
+
+.fav {
+    padding-top: 100px;
+    margin-top: 200px;
+    margin-bottom: -200px;
+}
+
+.fav p {
+    font-family: Zen Old Mincho;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    
 }
 
 /* Carousel */
@@ -223,28 +265,109 @@ nav ul li a:hover {
     border: none;
 }
 
-.item {
-    width: 100%;
-}
-
-.imgShow {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+/* descreption */
+  
+.descreption {
+    margin: 10% 10% 0 10%;
+    padding: 10% 12%;
+    background-color: rgb(254, 250, 243);
 }
 
 .rowDec {
-    margin-left: 10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.col1 {
+    flex: 1;
+}
+
+.col1:first-child {
+    margin-right: 20px;
+} 
+
+.descText {
+    padding: 10% 5%;
+}
+
+.descText p:first-child{
+    font-family: Zen Old Mincho;
+    font-size: 50px;
+}
+
+.descText p:last-child{
+    font-size: 14px;
+}
+
+  
+.rowImg {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: 3%;
+}
+
+.rowImg img {
+    width: 100%;
+}
+
+/*   style for one item  */
+
+
+.oneitemimg {
+    width: 40%;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.oneitemimg img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* anout us */
+
+.about{
+    margin: 20% 20%;
+    text-align: left;
+}
+
+.about h2{
+    font-family: Zen Old Mincho;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.about p{
+    font-size: 18px;
+    width: 40%;
+    padding-top: 5px;
 }
 
 
-#footer p{
+/* footer */
+
+footer{
 	width: 100%;
-    margin-bottom: 0;
-	padding: 20px;
-	color: white;
+	padding: 20px 0;
 	text-align: center;
-	background-color: rgb(228, 227, 215);
+    background-color: rgb(254, 250, 243);
     color: black;
     font-size: 10px;
+    font-family: PT Sans Caption;
+    border-style: solid none none none;
+}
+footer p {
+    margin-top: 12px;
+}
+
+  
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .columnImg {
+      width: 100%;
+    }
 }
