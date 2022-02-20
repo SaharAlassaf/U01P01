@@ -8,7 +8,14 @@ const myFav  = arr.filter((item)=>{
 
 const render = () => {
     $( ".panells" ).html("");
-    
+
+    if(myFav.length == 0){
+        $( ".panells" ).append(`<p>You still don't have any favorites!</p>
+        <p>This is where you’ll find the images you favourite.</p>
+        <p>Ready to find what you're looking for?</p>
+        <a href="index.html">HOME<a>
+        `);
+    }
     myFav.forEach((item, i) => {
     console.log(item);
         $( ".panells" ).append(

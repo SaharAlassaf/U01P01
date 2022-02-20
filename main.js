@@ -87,8 +87,8 @@ const render = () => {
     artest.forEach((item, i) => {
         $( ".panels" ).append(
             `<div id="panel" class="panel-${i}">
-                <img src="./images/${item.images[0]}" alt="" width="350px" class="showDes-${i}">
-                <p class="decerP">${item.name}</p>
+                <img src="./images/${item.images[0]}" alt="img" width="350px" class="showDes-${i}">
+                <p class="decerP showDes-${i}">${item.name}</p>
                 <p class="artestName">${item.description[0]}</p>
                 <p><span class="heart-${i}"><i class="far fa-heart"></i></span></p>
             </div>`);
@@ -99,7 +99,6 @@ const render = () => {
     }
 
     $( ".heart-"+ i ).click(() => isLiked(i));
-    //$( ".showDes-"+ i ).click(()=>{showDescr(i)});
     $( ".showDes-"+ i ).click(()=>{renderItem(i)});
     });
 }

@@ -1,9 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: PT Sans Caption;
-    
 }
 
 body {
@@ -152,7 +150,6 @@ iframe {
     justify-content: center;
     background-color: rgb(254, 250, 243);
     margin-left: 18%;
-
 }
 
 .decerP{
@@ -160,6 +157,7 @@ iframe {
     font-family: Zen Old Mincho;
     font-style: italic;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .artestName {
@@ -215,6 +213,19 @@ iframe {
 
 #panell:first-child{
     margin-top: 40%;
+}
+
+.panells p{
+    font-size: 15px;
+}
+.panells a{
+    font-size: 25px;
+    color: black;
+}
+
+.panells p:first-child{
+    margin-top: 35%;
+    font-size: 25px;
 }
 
 .fav {
@@ -295,8 +306,8 @@ iframe {
 /* descreption */
   
 .descreption {
-    margin: 10% 10% 0 10%;
-    padding: 10% 12%;
+    padding: 0 12%;
+    margin-bottom: 10%;
     background-color: rgb(254, 250, 243);
 }
 
@@ -337,6 +348,7 @@ iframe {
 
 .rowImg img {
     width: 100%;
+    cursor: pointer;
 }
 
 /*   style for one item  */
@@ -371,10 +383,16 @@ iframe {
     padding-top: 5px;
 }
 
+/* .imgs:hover{
+    background-image: url(picasso2.jpeg),  url(picasso3.jpeg),  url(picasso4.jpeg),;
+} */
+
 
 /* footer */
 
 footer{
+    position: absolute;
+    bottom: 0;
 	width: 100%;
 	padding: 20px 0;
 	text-align: center;
