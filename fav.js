@@ -5,6 +5,20 @@ const myFav  = arr.filter((item)=>{
     return item.isLike == true
 })
 
+const isLiked = (i) => {
+
+    if($( ".heart-"+ i  ).hasClass("liked")){
+        $( ".heart-"+ i  ).html('<i class="fa fa-heart-o" aria-hidden="true"></i>');
+        $( ".heart-"+ i  ).removeClass("liked");
+        myFav[i].isLike = false
+    }else{
+        $( ".heart-"+ i ).html('<i class="fa fa-heart" aria-hidden="true"></i>');
+        $( ".heart-"+ i ).addClass("liked");
+        myFav[i].isLike = true;
+    }
+    localStorage.setItem("arr",JSON.stringify(arr))
+    render();
+}
 
 const render = () => {
     $( ".panells" ).html("");
@@ -36,7 +50,6 @@ const render = () => {
     }
 
     $( ".heart-"+ i ).click(() => isLiked(i));
-    //$( ".showDes-"+ i ).click(()=>{showDescr(i)});
     $( ".showDes-"+ i ).click(()=>{renderItem(i)});
     });
 }

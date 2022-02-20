@@ -106,7 +106,10 @@ nav ul li a:hover {
 
 .video-container{
     width: 100%;
-    height: 110vh;
+    height: 101vh;
+    border-style: none none solid none;
+    border-width: 10px;
+    margin-bottom: 5%;
   }
       
 iframe {
@@ -240,8 +243,9 @@ iframe {
     font-size: 50px;
 }
 .col2 {
+    width: 40%;
     display: inline-block;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .decerFav{
     /* font-family: Noto Serif Display; */
@@ -318,11 +322,7 @@ iframe {
 }
 
 .col1 {
-    flex: 1;
-}
-
-.col1:first-child {
-    margin-right: 20px;
+    margin-left: 20%;
 } 
 
 .descText {
@@ -368,7 +368,7 @@ iframe {
 
 .about{
     margin: 20% 20%;
-    text-align: left;
+    text-align: center;
 }
 
 .about h2{
@@ -381,18 +381,21 @@ iframe {
     font-size: 18px;
     width: 40%;
     padding-top: 5px;
+    margin-left: 30%;
 }
 
-/* .imgs:hover{
+.hoverImg:hover{
     background-image: url(picasso2.jpeg),  url(picasso3.jpeg),  url(picasso4.jpeg),;
-} */
+    background-position: right bottom, left top;
+}
 
 
 /* footer */
+.space{
+    margin-top: 380px;
+}
 
 footer{
-    position: absolute;
-    bottom: 0;
 	width: 100%;
 	padding: 20px 0;
 	text-align: center;
@@ -406,8 +409,6 @@ footer p {
     margin-top: 12px;
 }
 
-  
-  
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
     .columnImg {

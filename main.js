@@ -62,24 +62,7 @@ const search = () => {
     const inputSearch = $( "#inputSearch" ).val();
     return artest.filter((item) => item.name == inputSearch);
     // console.log(artest);
-    // render();
 }
-/*
-const showDescr = (i) => {
-    console.log("show");
-    $( ".imgShow" ).append(`<img src="./images/${artest[i].images[0]}" alt="" width="${artest[i].with}px">`);
-    $( ".descText" ).append(`<p>hggffffdfxx  </p>`)
-    artest.images.forEach((item, i) => {
-        $( ".pad15" ).append(`<div class="item">
-                                <div class="pad15">
-                                    <img src="./images/${item[i]}" alt="" width="${artest[i].with}px">
-                                </div>
-                            </div>`);
-    });
-    console.log("shoooow");
-    render();
-}
-*/
 
 const render = () => {
     $( ".panels" ).html("");
@@ -87,7 +70,7 @@ const render = () => {
     artest.forEach((item, i) => {
         $( ".panels" ).append(
             `<div id="panel" class="panel-${i}">
-                <img src="./images/${item.images[0]}" alt="img" width="350px" class="showDes-${i}">
+                <img src="./images/${item.images[0]}" alt="img" width="350px" class="showDes-${i} hoverImg">
                 <p class="decerP showDes-${i}">${item.name}</p>
                 <p class="artestName">${item.description[0]}</p>
                 <p><span class="heart-${i}"><i class="far fa-heart"></i></span></p>
