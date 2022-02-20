@@ -16,9 +16,9 @@ const render = () => {
                     <div class="col1">
                     <img src="./images/${item.images[0]}" alt="" width="350px" class="showDes-${i}">
                     </div>
-                    <div class="col1">
-                    <p class="decerP">${item.name}</p>
-                    <p class="artestName">${item.description[0]}</p>
+                    <div class="col2">
+                    <p class="decerFav">${item.name}</p>
+                    <p class="artestNameFav">${item.description[0]}</p>
                     <p><span class="heart-${i}"><i class="far fa-heart"></i></span></p>
                     </div>
                 </div>`);

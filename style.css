@@ -131,15 +131,14 @@ iframe {
 
 .mainContentt {
     width: 100%;
-    padding: 0 12%;
     border: 1rm solid black;
     margin-bottom: 100px;
     background-color: rgb(254, 250, 243);
+    text-align: center; 
 }
 
 .content {
     width: 100%;
-    padding: 0 8%;
     background-color: rgb(254, 250, 243);
     /* overflow: hidden; */
     /*border: 0.1rem solid black;*/
@@ -152,8 +151,9 @@ iframe {
     grid-gap: 5%;
     justify-content: center;
     background-color: rgb(254, 250, 243);
-}
+    margin-left: 18%;
 
+}
 
 .decerP{
     /* font-family: Noto Serif Display; */
@@ -166,11 +166,18 @@ iframe {
     display: inline-block;
     font-family: PT Sans Caption;
     font-size: 15px;
+    margin-right: 50%;
 }
 
 .panels span{
     float: left;
-    font-size: 20px;
+    font-size: 30px;
+    margin-left: 49%;
+    margin-top: -10%;
+}
+
+.panels img{
+    cursor: pointer;
 }
 
 .fa-heart-o {
@@ -186,6 +193,7 @@ iframe {
 }
 
 
+
 /* favorite */
 
 .title {
@@ -194,10 +202,12 @@ iframe {
     text-align: center;
     width: 100%;
 }
+.panells{
+    margin-top: -30%;
+}
 
 #panell{
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     margin-top: 10%;
     background-color: rgb(254, 250, 243);
@@ -217,8 +227,25 @@ iframe {
     font-family: Zen Old Mincho;
     color: black;
     font-size: 50px;
-    text-align: center;
-    
+}
+.col2 {
+    display: inline-block;
+    margin-top: 20%;
+}
+.decerFav{
+    /* font-family: Noto Serif Display; */
+    font-family: Zen Old Mincho;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.artestNameFav {
+    display: inline-block;
+    font-family: PT Sans Caption;
+    font-size: 15px;
+}
+.panells span{
+    font-size: 30px;
 }
 
 /* Carousel */
@@ -318,13 +345,11 @@ iframe {
 .oneitemimg {
     width: 40%;
     margin-bottom: 50px;
-    cursor: pointer;
 }
 
 .oneitemimg img {
     width: 100%;
     height: 100%;
-    cursor: pointer;
 }
 
 /* anout us */
